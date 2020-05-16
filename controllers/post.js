@@ -1,6 +1,10 @@
 const getPosts = (req, res) =>
 {
-    res.send('Hello from Node JS api');
+    res.json({
+        posts: [
+            {title: "First title"} ,  {title: "Second title"} ,
+        ]
+    });
 }
 
 module.exports = { getPosts }
