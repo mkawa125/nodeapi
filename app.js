@@ -4,7 +4,7 @@ const morgan = require('morgan');
 
 // require routes
 
-const { getPosts } = require('./routes/post')
+const postRoutes = require('./routes/post')
 
 const myOwnMiddleware = (req , res , next) =>
 {
@@ -16,7 +16,7 @@ const myOwnMiddleware = (req , res , next) =>
 app.use(morgan("dev"));
 app.use(myOwnMiddleware);
 
-app.get('/' , getPosts)
+app.get('/' , postRoutes)
 const port = 3000;
 
 app.listen(port, () =>
