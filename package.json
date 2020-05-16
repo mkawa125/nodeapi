@@ -1,0 +1,27 @@
+{
+  "name": "nodeapi",
+  "version": "1.0.0",
+  "description": "Node js api",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkawa125/nodeapi.git"
+  },
+  "keywords": [
+    "Node",
+    "api"
+  ],
+  "author": "Dahabu Saidi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mkawa125/nodeapi/issues"
+  },
+  "homepage": "https://github.com/mkawa125/nodeapi#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  }
+}
