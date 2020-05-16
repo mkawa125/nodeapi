@@ -4,9 +4,9 @@ const app = express();
 
 // require routes
 
-const postRoutes = require('./routes/post')
+const {getPosts} = require('./routes/post')
 
-app.get('/' , postRoutes.getPosts)
+app.get('/' , getPosts)
 const port = 3000;
 
 app.listen(port, () =>
