@@ -6,8 +6,15 @@ const morgan = require('morgan');
 
 const { getPosts } = require('./routes/post')
 
+const myOwnMiddleware = (req , res , next) =>
+{
+    console.log("Middleware applied !!!");
+
+    next()
+}
 // Middleware
 app.use(morgan("dev"));
+app.use(myOwnMiddleware);
 
 app.get('/' , getPosts)
 const port = 3000;
